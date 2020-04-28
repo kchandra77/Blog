@@ -1,0 +1,26 @@
+{% extends "layout.html.twig" %}
+ 
+{% block body %}
+    <form>
+  <fieldset>
+  <div class="form-title">
+    <br><h1>Contact</h1></br>
+  </div>
+     <div class="form-group">
+      <label for="familyname">Nom</label>
+      <input type="famname" class="form-control" id="familyname" aria-describedby="familyname">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example : mail@example.com">
+      <small id="emailAd" class="form-text text-muted">Ne communiquer à personne votre email </small>
+    </div>
+    <div class="form-group">
+      <label for="text">Message</label>
+      <textarea class="form-control" id="text" rows="3" placeholder="Ecrivez votre message..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Envoyer</button>
+  </fieldset>
+</form>
+{% endblock %}
